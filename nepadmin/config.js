@@ -56,7 +56,7 @@ layui.define(function(exports) {
       statusName: 'code',
       statusCode: {
         //数据状态一切正常的状态码
-        ok: 0,
+        ok: 200,
         //通过接口返回的登录过期状态码
         logout: 401
       },
