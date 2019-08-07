@@ -265,8 +265,6 @@ layui.define(['laytpl', 'laypage', 'layer', 'form', 'util', 'view', 'conf'], fun
   Class.prototype.render = function () {
     var that = this
       , options = that.config;
-    console.log('that', that)
-    console.log('option', options)
     options.elem = $(options.elem);
     options.where = options.where || {};
     options.id = options.id || options.elem.attr('id') || that.index;
@@ -664,7 +662,6 @@ layui.define(['laytpl', 'laypage', 'layer', 'form', 'util', 'view', 'conf'], fun
     that.config = $.extend(true, {}, that.config, options);
     // 重载带上基础配置信息
     that.config = createOptions(that.config);
-    console.log('1', that.config)
     that.render();
   };
 

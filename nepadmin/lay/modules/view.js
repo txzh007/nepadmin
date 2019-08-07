@@ -454,7 +454,6 @@ layui
         console.error(msg)
       }
       self.createRequestParams = function (params) {
-        console.log('params',params)
         var success = params.success
         var error = params.error
 
