@@ -221,7 +221,7 @@
                   </ul>
                   <div class="layui-tab-content" style="padding:0;">
                     <div class="layui-tab-item layui-show nepadmin-table-full">
-                      <table lay-filter="index-tableOrder"></table>
+                      <table id="index-tableOrder"></table>
                     </div>
                   </div>
                 </div>
@@ -286,7 +286,7 @@
           <a lay-href="/" class="nepadmin-avatar nepadmin-mar-r20" title="在线">
             <span class="layui-badge-dot layui-bg-green"></span>
             <img
-              src="http://img2.imgtn.bdimg.com/it/u=3197537752,2095789724&fm=26&gp=0.jpg"
+              src="https://c-ssl.duitang.com/uploads/item/201503/31/20150331155006_kd5rr.thumb.700_0.jpeg"
             /> </a
           ><a
             lay-href="/"
@@ -295,7 +295,7 @@
           >
             <span class="layui-badge-dot layui-bg-green"></span>
             <img
-              src="http://img2.imgtn.bdimg.com/it/u=3197537752,2095789724&fm=26&gp=0.jpg"
+              src="https://c-ssl.duitang.com/uploads/item/201503/31/20150331155006_kd5rr.thumb.700_0.jpeg"
             /> </a
           ><a
             lay-href="/"
@@ -304,7 +304,7 @@
           >
             <span class="layui-badge-dot layui-bg-green"></span>
             <img
-              src="http://img2.imgtn.bdimg.com/it/u=3197537752,2095789724&fm=26&gp=0.jpg"
+              src="https://c-ssl.duitang.com/uploads/item/201503/31/20150331155006_kd5rr.thumb.700_0.jpeg"
             /> </a
           ><a
             lay-href="/"
@@ -313,7 +313,7 @@
           >
             <span class="layui-badge-dot layui-bg-green"></span>
             <img
-              src="http://img2.imgtn.bdimg.com/it/u=3197537752,2095789724&fm=26&gp=0.jpg"
+              src="https://c-ssl.duitang.com/uploads/item/201503/31/20150331155006_kd5rr.thumb.700_0.jpeg"
             /> </a
           ><a
             lay-href="/"
@@ -322,7 +322,7 @@
           >
             <span class="layui-badge-dot layui-bg-green"></span>
             <img
-              src="http://img2.imgtn.bdimg.com/it/u=3197537752,2095789724&fm=26&gp=0.jpg"
+              src="https://c-ssl.duitang.com/uploads/item/201503/31/20150331155006_kd5rr.thumb.700_0.jpeg"
             />
           </a>
         </div>
@@ -443,7 +443,7 @@
 
       var tableObj = table.render({
         size: 'nob',
-        elem: '[lay-filter="index-tableOrder"]',
+        elem: '#index-tableOrder',
         api: 'getGoods',
         height: 400,
         cols: [
@@ -480,7 +480,7 @@
           ]
         ]
       })
-
+      console.log('susscess')
       element.on('tab(index-order)', function(data) {
         tableObj.reload()
       })

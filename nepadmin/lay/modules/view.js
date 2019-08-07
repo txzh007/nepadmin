@@ -53,12 +53,12 @@ layui
 
         layui.each(template, function (index, tem) {
           var tem = $(tem)
+          
           var url = tem.attr('lay-url') || ''
           var api = tem.attr('lay-api') || ''
           var type = tem.attr('lay-type') || 'get'
           var data = new Function('return ' + tem.attr('lay-data'))()
           var done = tem.attr('lay-done') || ''
-
           if (url || api) {
             //进行AJAX请求
             self.request({
@@ -454,6 +454,7 @@ layui
         console.error(msg)
       }
       self.createRequestParams = function (params) {
+        console.log('params',params)
         var success = params.success
         var error = params.error
 
